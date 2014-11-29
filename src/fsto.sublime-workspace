@@ -1,0 +1,1202 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"v",
+				"volume"
+			],
+			[
+				"volume",
+				"volumechange"
+			],
+			[
+				"new",
+				"newPlayer"
+			],
+			[
+				"i",
+				"isAuth"
+			],
+			[
+				"def",
+				"defaultLang"
+			],
+			[
+				"ch",
+				"chb"
+			],
+			[
+				"e",
+				"emptyCompilations"
+			],
+			[
+				"patt",
+				"pattern"
+			],
+			[
+				"patter",
+				"pattern"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"form",
+				"formObj"
+			],
+			[
+				"raw",
+				"raw-form"
+			],
+			[
+				"cke",
+				"checkBoxes"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"simple",
+				"simpleRows"
+			],
+			[
+				"sel",
+				"selectPatterns"
+			],
+			[
+				"cou",
+				"countParts"
+			],
+			[
+				"pa",
+				"parsed"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"la",
+				"lang"
+			],
+			[
+				"re",
+				"regexp"
+			],
+			[
+				"tra",
+				"transFrom"
+			],
+			[
+				"lan",
+				"langId"
+			],
+			[
+				"pat",
+				"patterns"
+			],
+			[
+				"selec",
+				"selected"
+			],
+			[
+				"p",
+				"pattern"
+			],
+			[
+				"patte",
+				"patterns"
+			],
+			[
+				"rege",
+				"regexps"
+			],
+			[
+				"row",
+				"rowId"
+			],
+			[
+				"le",
+				"letter"
+			],
+			[
+				"O",
+				"ORDER"
+			],
+			[
+				"pare",
+				"parentTR"
+			],
+			[
+				"cit",
+				"cityId"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"ro",
+				"route"
+			],
+			[
+				"rou",
+				"routeMachines"
+			],
+			[
+				"machine",
+				"machine_models"
+			],
+			[
+				"route",
+				"routeMachine"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"tl",
+				"tlId"
+			],
+			[
+				"te",
+				"textsObjs"
+			],
+			[
+				"rows",
+				"rowIds"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"table",
+				"tableName"
+			],
+			[
+				"inde",
+				"indexOf"
+			],
+			[
+				"or",
+				"orderDetails"
+			],
+			[
+				"orde",
+				"orderId"
+			],
+			[
+				"user",
+				"userId"
+			],
+			[
+				"ord",
+				"orders"
+			],
+			[
+				"order",
+				"orderIds"
+			],
+			[
+				"g",
+				"g"
+			],
+			[
+				"di",
+				"directory"
+			],
+			[
+				"marke",
+				"marker"
+			],
+			[
+				"marker",
+				"markers"
+			],
+			[
+				"opt",
+				"opt_options"
+			],
+			[
+				"o",
+				"options"
+			],
+			[
+				"lang",
+				"lang_id"
+			],
+			[
+				"l",
+				"lang_id"
+			],
+			[
+				"_co",
+				"_compileOnePattern"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"_p",
+				"_preCompileRec"
+			],
+			[
+				"r",
+				"raw"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"tr",
+				"try	Wrap in try { … } catch (…) { … }"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"ini",
+				"ini_set"
+			],
+			[
+				"par",
+				"parents"
+			],
+			[
+				"alert",
+				"alertTemplate"
+			],
+			[
+				"count",
+				"country_id"
+			],
+			[
+				"cur",
+				"curCity"
+			],
+			[
+				"echo",
+				"echopre	echopre"
+			],
+			[
+				"sub",
+				"subpatterns"
+			],
+			[
+				"coun",
+				"country"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"Re",
+				"regexp"
+			],
+			[
+				"text_",
+				"text_pattern_id"
+			],
+			[
+				"city",
+				"city_id"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"provide",
+				"provider_uid"
+			],
+			[
+				"J",
+				"jQuery"
+			],
+			[
+				"qu",
+				"quote"
+			],
+			[
+				"array",
+				"array_keys"
+			],
+			[
+				"ht",
+				"html"
+			],
+			[
+				"mar",
+				"markers"
+			],
+			[
+				"cont",
+				"controller"
+			],
+			[
+				"curr",
+				"currentCityIndex"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"array_m",
+				"array_merge"
+			],
+			[
+				"s",
+				"src"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"inlie",
+				"inline-block"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"paid",
+				"paid_amount"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"array_s",
+				"array_slice"
+			],
+			[
+				"descr",
+				"descr"
+			],
+			[
+				"marin",
+				"margin-left"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"dir",
+				"dirname"
+			],
+			[
+				"strip",
+				"strip_tags()"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"mysql_fet",
+				"mysql_fetch_assoc"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"array_u",
+				"array_unique"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"inle",
+				"inline-block"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"real",
+				"realpath()"
+			],
+			[
+				"index",
+				"index_id"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"mysql_ft",
+				"mysql_fetch_array"
+			],
+			[
+				"mysql_in",
+				"mysql_insert_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scripts/contentscript.js",
+			"settings":
+			{
+				"buffer_size": 10294,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ech",
+				"Snippet: echopre"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"fora",
+				"Format: Javascript"
+			],
+			[
+				"T",
+				"Tidy HTML"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 288.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/work/apache-tomcat/logs/localhost.2014-11-04.log",
+		"/D/work/mockserver/index.js",
+		"/C/Users/vkenyz/AppData/Local/Temp/fz3temp-1/style.css",
+		"/C/Users/vkenyz/.IntelliJIdea13/config/options/other.xml",
+		"/D/Downloads/keygen.class",
+		"/C/Users/vkenyz/.IntelliJIdea13/config/idea13.key",
+		"/C/Users/vkenyz/.IntelliJIdea13/config/eval/idea13.evaluation.key",
+		"/C/Users/vkenyz/OneDrive/projects/fsto-subs/manifest.json",
+		"/C/Users/vkenyz/OneDrive/projects/fsto-subs/contentscript.js",
+		"/C/Users/vkenyz/OneDrive/projects/fsto-subs/inject.js",
+		"/C/Users/vkenyz/.ssh/config",
+		"/C/cygwin64/home/vkenyz/.ssh/config",
+		"/C/Users/vkenyz/OneDrive/projects/fsto-subs/video-js/video.dev.js",
+		"/C/Users/skakr_000/AppData/Roaming/Sublime Text 2/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/skakr_000/AppData/Roaming/Sublime Text 2/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/C/Users/skakr_000/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/skakr_000/AppData/Local/Temp/Rar$DIa0.266/background.js",
+		"/C/Users/skakr_000/Downloads/extensionizr_custom1413133429631/manifest.json",
+		"/C/Users/skakr_000/SkyDrive/projects/fsto-subs/fsplayer.js",
+		"/C/Users/skakr_000/SkyDrive/projects/fsto-subs/video-js/demo.html",
+		"/C/Winginx/conf/vhosts/planeta-kino.dev.conf",
+		"/C/Users/skakr_000/SkyDrive/Documents/projects/planeta/server/index.js",
+		"/C/Users/skakr_000/SkyDrive/Documents/projects/planeta/server/package.json",
+		"/C/Users/skakr_000/Downloads/bwip-js-0.5/bwip.js",
+		"/C/Users/skakr_000/Downloads/bwip-js-0.5/node-bwipjs",
+		"/C/Users/skakr_000/SkyDrive/Documents/projects/planeta/server/npm-debug.log",
+		"/C/Users/skakr_000/SkyDrive/Documents/eway/text-prod/tabs/texts.inc.php",
+		"/C/Program Files (x86)/Half-Life 2 Episode Two/Start HL2 Episode Two.cmd",
+		"/C/Program Files (x86)/Half-Life 2/Start Half-Life 2.cmd",
+		"/C/Users/skakr_000/SkyDrive/Documents/eway/text-prod/tabs/rough.inc.php",
+		"/C/Users/skakr_000/AppData/Local/Cisco/Cisco AnyConnect Secure Mobility Client/preferences.xml",
+		"/C/Users/skakr_000/SkyDrive/Documents/eway/dev/sftp-config.json",
+		"/C/Users/skakr_000/SkyDrive/Documents/eway/dev/texts/includes/class.dbloop.php",
+		"/C/Users/skakr_000/SkyDrive/Documents/eway/dev/texts/tabs/patterns.inc.php",
+		"/C/Users/skakr_000/SkyDrive/Documents/eway/dev/texts/tabs/texts.inc.php",
+		"/C/Users/skakr_000/SkyDrive/Documents/eway/dev/texts/tabs/rough.inc.php",
+		"/C/Users/skakr_000/SkyDrive/Documents/eway/dev/texts/tabs/processed-old.inc.php",
+		"/C/Users/skakr_000/SkyDrive/Documents/eway/dev/texts/initTextsCatalog.php",
+		"/C/Users/skakr_000/AppData/Local/Temp/Rar$DIa0.607/Copying",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/templates/header.inc.php",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/tabs/texts.inc.php",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/tabs/rough.inc.php",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/css/style.css",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/includes/class.objects.php",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/tabs/processed.inc.php",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/startpage.php",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/cacheTexts.php",
+		"/C/Users/skakr_000/YandexDisk/eway/text-prod/tabs/processed.inc.php",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/includes/class.database.php",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/includes/class.dbobject.php",
+		"/C/Users/vkenyz/YandexDisk/eway/atl/sftp-config.json",
+		"/C/Users/vkenyz/YandexDisk/eway/text-prod/sftp-config.json",
+		"/C/Users/vkenyz/YandexDisk/eway/dev/texts/tabs/rough.inc.php",
+		"/C/Users/vkenyz/YandexDisk/eway/text-prod/tabs/rough.inc.php",
+		"/C/Users/vkenyz/YandexDisk/eway/text-prod/includes/class.config.php",
+		"/C/Users/vkenyz/YandexDisk/eway/text-prod/tabs/processed.inc.php",
+		"/C/Users/vkenyz/YandexDisk/eway/text-prod/tabs/texts.inc.php",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/sftp-config.json",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/includes/class.config.php",
+		"/C/Winginx/conf/vhosts/train.dev.conf",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/includes/functions.inc.php",
+		"/C/Users/skakr_000/YandexDisk/eway/text-prod/includes/functions.inc.php",
+		"/C/Users/skakr_000/YandexDisk/eway/text-prod/css/style.css",
+		"/C/Users/vkenyz/YandexDisk/eway/dev/texts/includes/functions.inc.php",
+		"/C/Users/vkenyz/YandexDisk/eway/dev/texts/tabs/processed.inc.php",
+		"/C/Users/vkenyz/YandexDisk/eway/text-prod/includes/class.objects.php",
+		"/C/Users/vkenyz/YandexDisk/eway/text-prod/includes/functions.inc.php",
+		"/C/Users/vkenyz/AppData/Roaming/Sublime Text 2/Packages/Goto-CSS-Declaration/goto_css_declaration.sublime-settings",
+		"/C/Users/vkenyz/AppData/Roaming/Sublime Text 2/Packages/Goto-CSS-Declaration/Default (Windows).sublime-keymap",
+		"/C/Users/vkenyz/YandexDisk/eway/dev/texts/css/style.css",
+		"/C/Users/vkenyz/YandexDisk/eway/dev/texts/index.php",
+		"/C/Users/skakr_000/AppData/Local/Temp/fz3temp-1/yams.snippet.inc.php",
+		"/C/Users/skakr_000/AppData/Local/Temp/fz3temp-1/yams.class.inc.php",
+		"/C/Users/skakr_000/AppData/Local/Temp/fz3temp-1/yams.plugin.inc.php",
+		"/C/Winginx/home/lodb.old/public_html/manager/includes/config.inc.php",
+		"/C/Winginx/home/lodb.old/public_html/assets/cache/siteCache.idx.php",
+		"/C/Winginx/home/lodb.old/public_html/.htaccess",
+		"/C/Winginx/conf/vhosts/lodb.old.conf",
+		"/C/Winginx/conf/vhosts/last.vk.conf",
+		"/C/Users/skakr_000/AppData/Local/Temp/fz3temp-1/ddreadonly.php",
+		"/C/Users/skakr_000/AppData/Local/Temp/fz3temp-1/mg_backend_manager.php",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/templates/admin/orders.html",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/api.php",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/templates/admin/import.html",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/includes/functions.inc.php",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/templates/wizard.html",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/scripts/controllers.js",
+		"/C/Winginx/home/lodb.new/public_html/core/config/config.inc.php",
+		"/C/Winginx/winginx.exe",
+		"/C/Users/skakr_000/AppData/Local/Temp/Rar$DIa0.349/mm_rules.inc.php",
+		"/C/Users/skakr_000/AppData/Local/Temp/Rar$DIa0.202/mysql_lodb_db.2014-05-03.sql",
+		"/C/Users/skakr_000/AppData/Local/Temp/Rar$DIa0.154/.htaccess",
+		"/C/Users/skakr_000/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/scripts/app.js",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/index.php",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/includes/class.objects.php",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/includes/class.config.php",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/scripts/filters.js",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/templates/cabinet.html",
+		"/C/Users/skakr_000/AppData/Local/Temp/fz3temp-1/ddautofolders.php",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/includes/class.dbobject.php",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/includes/class.phpexcel.php",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/includes/PHPExcel/Shared/OLERead.php",
+		"/C/Users/skakr_000/YandexDisk/eway/atl/scripts/angular-file.js",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/scripts/functions.js",
+		"/C/Users/skakr_000/YandexDisk/eway/dev/texts/templates/footer.inc.php",
+		"/C/Users/skakr_000/Downloads/Order45.xlsx",
+		"/C/Users/skakr_000/YandexDisk/eway/adm-static/adm/js/helpers/texts.js",
+		"/C/Users/skakr_000/YandexDisk/eway/adm-static/sftp-config.json",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/includes/class.objects.php",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/scripts/controllers.js",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/api.php",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/templates/wizard.html",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/styles/global.css",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/scripts/distancewidget.js",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/includes/functions.inc.php",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/includes/class.polyline.php",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/includes/PHPExcel/Comment.php",
+		"/D/Downloads/SQLyog Ultimate v.11.3.3/SQLyog 11.3.3 Patch.reg",
+		"/C/Users/skakr_000/YandexDisk/eway/tmp/Order33.xlsx",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/includes/PHPExcel/Style/Alignment.php",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/includes/class.config.php",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/includes/PHPExcel/Reader/Excel5.php",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/includes/PHPExcel/Reader/Gnumeric.php",
+		"/C/Users/skakr_000/YandexDisk/eway/adv/includes/PHPExcel/Style/Font.php",
+		"/C/Users/skakr_000/YandexDisk/eway/tmp/Order32.xlsx",
+		"/C/Users/skakr_000/YandexDisk/eway/adm/application/views/scripts/ways/routes.phtml",
+		"/C/Users/skakr_000/YandexDisk/eway/adm-static/adm/js/ways/apps/routes-app.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\atl\\includes",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adv\\includes\\PHPExcel",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adm\\application",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adm\\application\\classes",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adm\\application",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adm-static\\adm\\js\\ways",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adm-static\\adm\\js\\ways\\views",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adm\\application",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adm\\application\\classes",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adm\\application",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adm\\application\\classes\\Eway",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adv",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\dev\\texts",
+			"C:\\Users\\skakr_000\\YandexDisk\\eway\\adv\\hybridauth",
+			"D:\\projects\\accreditations",
+			"C:\\Users\\skakr_000\\Documents\\GitHub\\CloudKeeper-net",
+			"C:\\Users\\skakr_000\\Documents\\GitHub\\CloudKeeper-net\\includes\\js",
+			"C:\\Users\\skakr_000\\Documents\\GitHub\\CloudKeeper-net",
+			"C:\\Users\\Skakruk\\Documents\\My Dropbox\\freelance\\advertising9_new",
+			"/home/Skakruk/Dropbox/freelance/advertising9_new",
+			"C:\\Users\\Skakruk\\Documents\\My Dropbox\\freelance\\advertising9_new\\includes",
+			"C:\\Users\\Skakruk\\Documents\\My Dropbox\\freelance\\businessnetonline",
+			"C:\\Users\\Skakruk\\Documents\\My Dropbox\\freelance\\businessnetonline\\include",
+			"D:\\freelance\\advertising9\\home\\jumps8\\public_html\\ADVERTISING9.COM_VICTOR\\design",
+			"D:\\freelance\\advertising9\\home\\jumps8\\public_html\\ADVERTISING9.COM_VICTOR",
+			"C:\\Users\\Skakruk\\Documents\\freelance\\businessnetonline\\saptraining",
+			"C:\\Users\\Skakruk\\Documents\\freelance\\businessnetonline",
+			"C:\\Users\\Skakruk\\Documents\\freelance\\businessnetonline\\saptraining",
+			"C:\\Users\\Skakruk\\Documents\\freelance\\businessnetonline",
+			"C:\\Users\\Skakruk\\Documents\\freelance\\businessnetonline\\admin",
+			"C:\\Users\\Skakruk\\Documents\\freelance\\businessnetonline",
+			"C:\\Users\\Skakruk\\Documents\\webdreamlab\\models\\manager"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"date",
+			"fsAplayer",
+			"savetext",
+			"savetexts",
+			"cacheCompiled",
+			"mergeNsave",
+			"page",
+			"$pager->numPages",
+			"forceParseText",
+			"resulter",
+			"echo",
+			"echopre",
+			"echop",
+			"forceParseText",
+			"patterns",
+			"            {",
+			"regexps",
+			"parseText",
+			"tr-text",
+			"tr-form-els",
+			"chb",
+			"alerts-holder",
+			"alertTemplate",
+			"echop",
+			"parseTexts",
+			"parseText",
+			"tl['tl_id']",
+			"tl_id",
+			"redi",
+			"Expand",
+			"MultiLangExpand",
+			"mm_demo_rules",
+			"//    ",
+			"machines ",
+			"`machines`",
+			"writeXls",
+			"$texts",
+			"table_labels",
+			"cityKeys",
+			"raw-text-parsed",
+			"vsprintf",
+			"direct",
+			"placema",
+			"place",
+			"addma",
+			"mark",
+			"get('lo",
+			"getlo",
+			"markers",
+			"cities",
+			"formorde",
+			"matchre",
+			"getInfoForMarker",
+			"placeMarker",
+			"console",
+			"addre",
+			"typeaheadOnS",
+			"typea",
+			");\n",
+			"marke",
+			"markers",
+			"opt.marker.styleIcon.color",
+			"color",
+			"loadro",
+			"center",
+			"setWidth",
+			"$verySmall",
+			"$zoomFactor",
+			"$numLevels",
+			"$forceEndpoints",
+			"forceEndpoints",
+			"self::",
+			"stop_position",
+			"GetRouteToDisplay",
+			"glu",
+			"consol",
+			"gluing",
+			"routeTo",
+			"applyFromArray",
+			"GetRouteInfo",
+			"PHPExcel_Style_Border",
+			"routetoc",
+			"cart",
+			"addRouteToCart",
+			"routeToCart",
+			"orderObjectBy",
+			"modelsResource",
+			"parseText",
+			"Eway_DB_City",
+			"main2",
+			"Eway_Static_City",
+			"$langs",
+			"Eway_Static_City",
+			"Eway_DB_City",
+			"compileInnerPattern",
+			"getPatterns",
+			"RouteModel",
+			"Route loaded",
+			"systemName",
+			"RouteModel",
+			"Routes list loaded",
+			"curCityId",
+			"countries",
+			"cityI",
+			"countries",
+			"Eway_Static_City",
+			"main2",
+			"hybridauth",
+			"console.log(data);",
+			"response",
+			"cabinetCtrl",
+			"$_PO",
+			"'];\n",
+			"echo '",
+			"echo",
+			"onePattern",
+			"parseCurlyBrace",
+			"\":\"",
+			"'",
+			"Pattern_details",
+			"t.title",
+			"t.id",
+			"transportTypes",
+			"modalInstance",
+			"username",
+			"authInit",
+			"processAuthStart",
+			"setup"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"tl['id']",
+			"$this->numLevels",
+			"$this->forceEndpoints",
+			"$this->",
+			"\": \"",
+			"\"",
+			"PatternDetails",
+			"t.label",
+			"t.value",
+			"texts_agencies",
+			"streets",
+			"street_points",
+			"street_pieces",
+			"stops",
+			"stop_names",
+			"routes",
+			"places",
+			"frequencies",
+			"crossroads",
+			"        rewrite",
+			"",
+			"deny ",
+			"curCity",
+			"cCI",
+			"\\\"",
+			"\"",
+			"span12",
+			"\",'",
+			"src=\"buylinks/_ima",
+			"",
+			"),\n(",
+			"),\\n(",
+			"",
+			"li",
+			"",
+			"li",
+			":hover",
+			"%",
+			"url(../images",
+			"/",
+			"-",
+			"url('../images/",
+			"src=\"sap-chat-room/images/\"",
+			"www.saptraining9.com",
+			"\"nick\"",
+			"\"wm-mic\"",
+			"\"wm-tits\"",
+			"\"wm-eyes\"",
+			"\"wm-body-type\"",
+			"\"wm-orientation\"",
+			"\"wm-hair-length\"",
+			"\"wm-hair-colour\"",
+			"\"wm-height\"",
+			"\"wm-weight\"",
+			"\"wm-age\"",
+			"wm-age",
+			"/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scripts/contentscript.js",
+					"settings":
+					{
+						"buffer_size": 10294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9843,
+								9843
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": false,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3420.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 167.0
+	},
+	"output.sftp":
+	{
+		"height": 189.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/skakr_000/YandexDisk/freelance/tf.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 268.0,
+	"status_bar_visible": true
+}

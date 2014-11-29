@@ -1,0 +1,97 @@
+.custom_video:-webkit-full-screen-ancestor {
+    width: 100%!important;
+    height: 100%!important;
+    position: fixed !important;
+    top:0;
+}
+.custom_video video + div{
+    bottom: 65px;
+    line-height: 70px;
+}
+.custom_video video + div div{
+    line-height: 1.5em;
+    display: inline-block !important;
+    vertical-align: middle;
+}
+.custom_video:-webkit-full-screen-ancestor video + div{
+    width: 100%;
+    position: absolute;
+    top: auto !important;
+    bottom: 2.3vw;
+    z-index: 9999999999;
+    left: 0;
+    line-height: 70px;
+    text-shadow: black 2px 2px 6px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw !important;
+}
+.custom_video:-webkit-full-screen-ancestor video + div div{
+    line-height: 1.5em;
+    display: inline-block !important;
+    vertical-align: middle;
+
+}
+.custom_video video + div{
+    width: 100%!important;
+}
+
+.addSubtitle{
+    width: 24px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    height: 17px;
+    vertical-align: top;
+    cursor: pointer;
+    font-size: 14px;
+}
+.addSubtitle input{
+    visibility: hidden;
+}
+
+select#subtitles{
+    width: 200px;
+    margin-left: 3px;
+}
+
+.selects label{
+    color: #fff;
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+.selects label select{
+    margin-left: 3px;
+}
+
+.shift-wrap {
+    position: relative;
+    color: #FFF;
+    vertical-align: top;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.shift-wrap:hover .nstSlider{
+    display: block;
+}
+
+.b-player-page-controls__subtitles-wrap {
+    margin: 0 0 0 10px;
+    height: 20px;
+    float: left;
+}
+.b-player-page-controls-wrap:after{
+    content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.b-player-page-controls-wrap{
+    height: auto !important;
+    padding: 11px 0 8px 0 !important;
+}
