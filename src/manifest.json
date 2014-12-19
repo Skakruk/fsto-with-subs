@@ -4,7 +4,6 @@
          "libs/jquery-2.1.1.min.js",
          "libs/jquery.xmlrpc.min.js",
          "libs/pako.min.js",
-         "libs/popcorn-complete.js",
          "libs/srt-parser.js",
          "scripts/contentscript.js"
       ],
@@ -15,7 +14,7 @@
       "run_at": "document_end"
    } ],
    "description": "Watch shows and movies on FS.to with subtitles",
-   "homepage_url": "https://chrome.google.com/webstore/detail/",
+   "homepage_url": "https://github.com/Skakruk/fsto-with-subs",
    "manifest_version": 2,
    "minimum_chrome_version": "22",
    "name": "FS.TO With Subs",
@@ -25,6 +24,9 @@
       "scripts/inject.js"
    ],
    "permissions": [
-      "tabs", "http://www.opensubtitles.org/", "http://api.opensubtitles.org/"
-   ]
+      "tabs", "http://api.opensubtitles.org/",  "activeTab"
+   ],
+   "externally_connectable": {
+     "matches": ["http://fs.to/*"]
+   }
 }

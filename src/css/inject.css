@@ -1,16 +1,16 @@
-.l-content-player-player .subs-holder{
+.m-aplayer__html5-desktop-controls_video .subs-holder{
     bottom: 65px;
     text-align: center;
     position: relative;
 }
-.l-content-player-player .subs-holder span{
+.m-aplayer__html5-desktop-controls_video .subs-holder span{
     vertical-align: middle;
     font-weight: bold;
     text-shadow: black 2px 2px 6px;
     color: #fff;
     font-size: 18px;
-} 
-.l-content-player-player:-webkit-full-screen-ancestor .subs-holder{
+}
+:-webkit-full-screen .subs-holder{
     width: 100%;
     position: absolute;
     top: auto;
@@ -20,7 +20,8 @@
     line-height: 70px;
     color: #fff;
 }
-.l-content-player-player:-webkit-full-screen-ancestor .subs-holder span{
+
+:-webkit-full-screen .subs-holder span{
     line-height: 1.5em;
     display: inline-block;
     vertical-align: middle;
@@ -122,4 +123,26 @@
 
 .hidden{
     display: none !important;
+}
+
+.b-actions .m-cc.b-dropdown{
+    position: relative;
+    width: 974px;
+    margin-top: -32px;
+    margin-left: -10px;
+}
+.b-actions .m-cc.b-dropdown .subtitles-list .selected a{
+    color: #5EA8DE;
+}
+
+.m-popup.m-cc .controls{
+    clear: both;
+}
+
+.b-player .b-actions .old-style.b-player-page-controls__subtitles-wrap{
+    margin: 0;
+    height: 30px;
+}
+.old-style.b-player-page-controls__subtitles-wrap .m-popup{
+    margin-left:0px;
 }
