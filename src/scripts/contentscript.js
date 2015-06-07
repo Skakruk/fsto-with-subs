@@ -13,52 +13,30 @@ var subsVideoPlayer = (function () {
         params: {
             osUrl: "http://www.opensubtitles.org"
         },
-        subtitlesControlTemplate: '<div class="b-player-page-controls__subtitles-wrap">\
-            <div class="b-player-page-controls__item m-subtitles">\
-                <div class="b-player-page-controls__item-selected">\
-                    <span class="b-player-page-controls__item-selected-inner">\
-                        <span class="subtitles-title">CC</span>\
-                    </span>\
-                </div>\
-                <div class="b-player-page-controls__item-dropdown" style="display: none;">\
-                    <ul class="subtitles-list"></ul>\
-                    <div class="controls">\
-                        <label class="addSubtitle">+<input type="file" id="uploadSrt"/></label>\
-                        <div class="shift-wrap hidden">\
-                            <input type="range" title="Сдвиг субтитров: 0 сек" class="shiftSlider" min="-20" max="20" step="0.2" />\
-                            <output class="shiftShow"></output>\
-                        </div>\
-                        <span class="turn-off-subs hidden" title="Выключить субтитры">&times;</span>\
+        videojsTemplate: '<video id="main_video" class="video-js vjs-sublime-skin" controls preload="auto" width="100%" height="100%"></video>',
+        subtitlesControlTemplate: '<div class="subtitles-wrap">\
+            <div class="close">&times;</div>\
+            <div class="m-subtitles loading">\
+                <ul class="subtitles-list"></ul>\
+                <div class="controls">\
+                    <label class="addSubtitle">+<input type="file" id="uploadSrt"/></label>\
+                    <div class="shift-wrap hidden">\
+                        <input type="range" title="Сдвиг субтитров: 0 сек" class="shiftSlider" min="-20" max="20" step="0.2" />\
+                        <output class="shiftShow"></output>\
                     </div>\
-                    <div class="b-player-page-controls__item-dropdown-hide"><span>Свернуть</span></div>\
+                    <span class="turn-off-subs hidden" title="Выключить субтитры">&times;</span>\
                 </div>\
             </div>\
         </div>\
         ',
-        subtitlesControlTemplateOld: '<div class="item b-player-page-controls__subtitles-wrap old-style">\
-                <a href="#" class="b-action m-cc m-arrowed" title="Субтитры" rel=".m-cc"><span><b>CC</b></span></a>\
-                <div class="b-dropdown m-popup m-cc" style="display: none;">\
-                    <div style="clear: both;">\
-                        <div class="item"><ul class="subtitles-list"></ul></div>\
-                        <div class="controls">\
-                            <label class="addSubtitle">+<input type="file" id="uploadSrt"/></label>\
-                            <div class="shift-wrap hidden">\
-                                <input type="range" title="Сдвиг субтитров: 0 сек" class="shiftSlider" min="-20" max="20" step="0.2" />\
-                                <output class="shiftShow"></output>\
-                            </div>\
-                            <span class="turn-off-subs hidden" title="Выключить субтитры">&times;</span>\
-                        </div>\
-                        <div class="b-hide m-cc"><a href="#" rel=".m-cc"><span>Свернуть</span></a></div>\
-                    </div>\
-                </div>\
-            </div>\
-        ',
+        subtitlesControlLink: '<a href="#" class="subtitles-title"><span>Субтитры</span></a>',
         injectScript: function (name) {
             var s = document.createElement('script');
             s.src = chrome.extension.getURL(name);
             s.onload = function () {
                 this.parentNode.removeChild(this);
             };
+
             (document.head || document.documentElement).appendChild(s);
         },
 
@@ -66,27 +44,12 @@ var subsVideoPlayer = (function () {
             var s = document.createElement('link');
             s.href = chrome.extension.getURL(name);
             s.rel = "stylesheet";
-            // s.onload = function () {
-            //     this.parentNode.removeChild(this);
-            // };
-            (document.head || document.documentElement).appendChild(s);
+            $(".b-iframe-aplayer iframe").contents().find("head").append(s);
         },
-        requestZip: function (url) {
-            return $.ajax({
-                url: url,
-                encoding: null,
-                type: 'GET',
-                contentType: "application/zip",
-                mimeType: 'text/plain; charset=x-user-defined'
-            });
-        },
-
         subs: {
             t: null,
             shift: 0,
             data: [],
-            holder: $(".subs-holder span"),
-            player: $(".b-aplayer__html5-desktop")[0],
             currentText: {},
             currentTime: 0,
             currentIndex: -1,
@@ -113,7 +76,8 @@ var subsVideoPlayer = (function () {
             },
             show: function (time) {
                 var me = this;
-
+                me.holder = me.$(".subs-holder span");
+                me.player =  me.$(".b-aplayer__html5-desktop")[0];
                 if (!me.currentText.end) {
                     me.search();
                     me.holder.html(me.currentText && me.currentText.text || "");
@@ -143,9 +107,9 @@ var subsVideoPlayer = (function () {
 
         feedSubtitles: function () {
             var me = this;
-            $(".main.m-aplayer__html5-desktop-controls_video .subs-holder").remove();
-            $(".main.m-aplayer__html5-desktop-controls_video").append('<div class="subs-holder"><span></span></div>');
-            me.subs.holder = $(".subs-holder span");
+            me.$(".main.m-aplayer__html5-desktop-controls_video .subs-holder").remove();
+            me.$(".main.m-aplayer__html5-desktop-controls_video").append('<div class="subs-holder"><span></span></div>');
+            me.subs.holder = me.$(".subs-holder span");
             me.subs.currentText = {};
             me.subs.data = parseSRT({
                 text: me.subtitlesData
@@ -164,7 +128,7 @@ var subsVideoPlayer = (function () {
                         url: me.options.url,
                         methodName: 'LogIn',
                         params: ["", "", "", 'OSTestUserAgent'],
-                        success: function (response, status, jqXHR) {
+                        success: function (response) {
                             if (response[0].status === '200 OK') {
                                 me.options.token = response[0].token;
                                 localStorage.setItem('ostoken', me.options.token);
@@ -235,42 +199,48 @@ var subsVideoPlayer = (function () {
 
         fetchSubs: function () {
             var me = this,
-                pipe = [],
                 gettingSubs = new $.Deferred(),
-                controlsEl = null,
-                startYear;
+                controlsEl = me.$(".b-aplayer__actions-translation"),
+                popupEl = me.$(".b-aplayer__actions-wrap");
 
             me.subtitles = {};
+            me.$(".subtitles-title").remove();
+            controlsEl.before(me.$(me.subtitlesControlLink));
 
-            if (me.usedOld) {
-                controlsEl = $(".b-actions:visible");
-                controlsEl.find(".b-player-page-controls__subtitles-wrap").remove();
-                controlsEl.append($(me.subtitlesControlTemplateOld));
-                $(".b-hide.m-cc, .b-action.m-cc").on("click", function (e) {
-                    e.preventDefault();
-                    $(".m-popup.m-cc").slideToggle();
-                    $(".m-cc.m-arrowed").toggleClass("m-expanded")
-                })
-                startYear = serial.year;
-            } else {
-                controlsEl = $(".b-player-page-controls__folder-content-wrap:visible");
-                controlsEl.find(".b-player-page-controls__subtitles-wrap").remove();
-                controlsEl.append($(me.subtitlesControlTemplate));
-                startYear = $(".b-player-skin__year a:first-child span").text();
-            }
+            me.$(".subtitles-wrap").remove();
+            popupEl.append(me.$(me.subtitlesControlTemplate));
 
+            popupEl.on("change", "#uploadSrt", function () {
+                var mee = this;
+                var reader = new FileReader();
+                reader.readAsText(this.files[0], "UTF-8");
+                reader.onload = function (evt) {
+                    me.subtitlesData = evt.target.result;
+                    var subli = me.$('<li>' + mee.value.split("\\").pop() + '</li>');
+                    me.$(".subtitles-list").append(subli);
+                    subli.data("srt", evt.target.result);
+                    me.feedSubtitles();
+                };
+            });
 
-            var subsElWrap = $(".b-player-page-controls__subtitles-wrap");
+            me.$(".subtitles-title").on("click", function (e) {
+                e.preventDefault();
+                me.$(".subtitles-wrap").toggle();
+            });
+            popupEl.find(".close").on("click", function (e) {
+                e.preventDefault();
+                me.$(".subtitles-wrap").toggle();
+            });
 
+            me.$(".m-subtitles").addClass("loading");
             me.osAPI.login().done(function () {
                 me.osAPI
-                    .search(me.enTitle, startYear, me.currentFileData.fsData.file_season, me.currentFileData.fsData.file_series)
+                    .search(me.enTitle, me.serial.year, me.currentFileData.fsData.file_season, me.currentFileData.fsData.file_series)
                     .done(function (results) {
                         if (results[0].data) {
                             var ids = [],
                                 uniqueNames = [];
                             results[0].data.forEach(function (sub) {
-
                                 if (
                                     sub.SubHearingImpaired == "0" && uniqueNames.indexOf(sub.MovieReleaseName.trim().toLowerCase()) === -1
                                 ) {
@@ -294,126 +264,99 @@ var subsVideoPlayer = (function () {
             });
 
             gettingSubs.then(function () {
-
-                $(".subtitles-list").empty();
+                me.$(".m-subtitles").removeClass("loading");
+                me.$(".subtitles-list").empty();
                 Object.keys(me.subtitles).forEach(function (key) {
                     var sub = me.subtitles[key],
                         subli = '';
 
                     if (me.usedOld) {
-                        subli = $('<li><a href="#">' + sub.name + '</li></li>');
+                        subli = me.$('<li><a href="#">' + sub.name + '</li></li>');
                     } else {
-                        subli = $('<li class="b-player-page-controls__item-dropdown-item">' + sub.name + '</li>');
+                        subli = me.$('<li class="b-player-page-controls__item-dropdown-item">' + sub.name + '</li>');
                     }
 
-                    $(".subtitles-list").append(subli);
+                    me.$(".subtitles-list").append(subli);
                     subli.data("srt", sub.data);
                 });
 
-                $(".subtitles-list").on("click", "li", function (e) {
+                me.$(".subtitles-list").on("click", "li", function (e) {
                     e.preventDefault();
-                    $(".subtitles-list li").removeClass("selected");
-                    var selectedSub = $(this);
+                    me.$(".subtitles-list li").removeClass("selected");
+                    var selectedSub = me.$(this);
                     selectedSub.addClass("selected");
                     me.params.shift = 0;
                     if (selectedSub.data("srt")) {
                         me.subtitlesData = selectedSub.data("srt");
                         me.feedSubtitles();
                         me.subtitleSelected = true;
-                        $(".shift-wrap").removeClass("hidden");
-                        $(".turn-off-subs").removeClass("hidden");
+                        me.$(".shift-wrap").removeClass("hidden");
+                        me.$(".turn-off-subs").removeClass("hidden");
                     } else {
                         me.subtitleSelected = false;
-                        $(".shift-wrap").addClass("hidden");
+                        me.$(".shift-wrap").addClass("hidden");
                     }
                 });
 
                 if (me.subtitleSelected) {
-                    $(".subtitles-list li:first-child").trigger("click");
+                    me.$(".subtitles-list li:first-child").trigger("click");
                 }
-                $(".turn-off-subs").on("click", function () {
-                    $(".b-player-page-controls__subtitles-wrap .selected").removeClass("selected");
-                    $(".b-player-page-controls__subtitles-wrap .b-player-page-controls__item-selected-inner").text("CC");
+                me.$(".turn-off-subs").on("click", function () {
+                    me.$(".subtitles-wrap .selected").removeClass("selected");
                     me.subs.removeHolder();
-                    $(this).addClass("hidden");
-                    $('.shift-wrap').addClass("hidden");
+                    me.$(this).addClass("hidden");
+                    me.$('.shift-wrap').addClass("hidden");
+                    me.subtitleSelected = false;
                 });
             });
 
-            $('.shiftSlider').off("input").on("input", function () {
+            me.$('.shiftSlider').off("input").on("input", function () {
                 me.subs.hide();
                 me.subs.shift = parseFloat(this.value);
-                $(this).attr("title", "Сдвиг субтитров: " + (me.subs.shift > 0 ? "+" : "") + me.subs.shift.toFixed(1) + " сек");
-                $(".shiftShow").val((me.subs.shift > 0 ? "+" : "") + me.subs.shift.toFixed(1));
+                me.$(this).attr("title", "Сдвиг субтитров: " + (me.subs.shift > 0 ? "+" : "") + me.subs.shift.toFixed(1) + " сек");
+                me.$(".shiftShow").val((me.subs.shift > 0 ? "+" : "") + me.subs.shift.toFixed(1));
                 me.subs.show();
             });
 
 
-
         },
-        _getUrlVars: function () {
-            var vars = [],
-                hash;
-            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-            for (var i = 0; i < hashes.length; i++) {
-                hash = hashes[i].split('=');
-                vars.push(hash[0]);
-                vars[hash[0]] = hash[1];
-            }
-            return vars;
-        },
-        replacePlayer: function (oldPlayerOptions) {
+        loadVideo: function () {
             var me = this;
-
-            $("body").on("change", "#uploadSrt", function () {
-                var mee = this;
-                var reader = new FileReader();
-                reader.readAsText(this.files[0], "UTF-8");
-                reader.onload = function (evt) {
-                    me.subtitlesData = evt.target.result;
-                    var subli;
-                    if (me.usedOld) {
-                        subli = $('<li><a href="#">' + mee.value.split("\\").pop() + '</li></li>');
-                    } else {
-                        subli = $('<li class="b-player-page-controls__item-dropdown-item">' + mee.value.split("\\").pop() + '</li>');
-                    }
-                    $(".subtitles-list").append(subli);
-                    subli.data("srt", evt.target.result);
-                    me.feedSubtitles();
-                };
-            });
-
-            $(".b-aplayer__html5-desktop").on("playing", function () {
-                me.subs.hide();
-                me.subs.search();
-                me.subs.show();
-            })
+            console.log(me.currentFileData);
+            me.videojsPlayer.src({type: "video/mp4", src: me.currentFileData.url});
+            me.videojsPlayer.play();
         }
     }
 });
 
 var videoPlayer = new subsVideoPlayer();
 
-
 ['scripts/inject.js'].forEach(function (name) {
     videoPlayer.injectScript(name);
 });
 
-var serial;
+$(".b-iframe-aplayer iframe").on("load", function () {
+    var s = document.createElement('script');
+    s.src = chrome.extension.getURL('libs/jquery-2.1.1.min.js');
+    s.onload = function () {
+        this.parentNode.removeChild(this);
+    };
+    $(".b-iframe-aplayer iframe").contents().find("head").append(s);
+});
 
-videoPlayer.replacePlayer();
 
 window.addEventListener("message", function (event) {
     if (event.source != window)
         return;
-    switch(event.data.eventName){
-        case "videoStartPlay": 
-            videoPlayer.usedOld = true;
-            serial = event.data.serial;
+    switch (event.data.eventName) {
+        case "videoStartPlay":
+            videoPlayer.serial = event.data.serial;
             var videoDef = $.Deferred();
             videoDef.promise();
+
             if (!videoPlayer.enTitle) {
-                $.get(serial.url, function (data) {
+
+                $.get(videoPlayer.serial.url, function (data) {
                     videoPlayer.enTitle = $(data).find(".b-tab-item__title-origin").text();
                     videoDef.resolve();
                 })
@@ -423,15 +366,29 @@ window.addEventListener("message", function (event) {
 
             videoPlayer.currentFileData = event.data.playlistItem;
 
+            if (videoPlayer.customPl) {
+                videoPlayer.loadVideo();
+            }
+
             videoDef.done(function () {
                 videoPlayer.fetchSubs();
-            })
-        break;
+            });
+
+            videoPlayer.$ = videoPlayer.subs.$ = function(selector){
+                return $(selector, $(".b-iframe-aplayer iframe")[0].contentDocument);
+            };
+
+            ['css/inject.css'].forEach(function (name) {
+                videoPlayer.injectCss(name);
+            });
+
+
+            break;
 
         case "fileSelected":
             videoPlayer.currentFileData = event.data.currentfile;
             videoPlayer.enTitle = $(".b-player-skin__header-origin").text();
             videoPlayer.fetchSubs();
-        break;
+            break;
     }
 }, false);

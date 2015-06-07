@@ -1,32 +1,42 @@
 {
-   "content_scripts": [ {
+  "content_scripts": [
+    {
       "js": [
-         "libs/jquery-2.1.1.min.js",
-         "libs/jquery.xmlrpc.min.js",
-         "libs/pako.min.js",
-         "libs/srt-parser.js",
-         "scripts/contentscript.js"
+        "libs/jquery-2.1.1.min.js",
+        "libs/jquery.xmlrpc.min.js",
+        "libs/pako.min.js",
+        "libs/srt-parser.js",
+        "scripts/contentscript.js"
       ],
       "css": [
-         "css/inject.css"
+        "css/inject.css"
       ],
-      "matches": ["http://fs.to/*/view/*", "http://fs.to/video/serials/*", "http://fs.to/video/films/*"],
+      "matches": [
+        "http://fs.to/*/view_iframe/*",
+        "http://fs.to/*/view/*"
+      ],
       "run_at": "document_end"
-   } ],
-   "description": "Watch shows and movies on FS.to with subtitles",
-   "homepage_url": "https://github.com/Skakruk/fsto-with-subs",
-   "manifest_version": 2,
-   "minimum_chrome_version": "22",
-   "name": "FS.TO With Subs",
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "0.1.0",
-   "web_accessible_resources": [
-      "scripts/inject.js"
-   ],
-   "permissions": [
-      "tabs", "http://api.opensubtitles.org/",  "activeTab"
-   ],
-   "externally_connectable": {
-     "matches": ["http://fs.to/*"]
-   }
+    }
+  ],
+  "description": "Watch shows and movies on FS.to with subtitles",
+  "homepage_url": "https://github.com/Skakruk/fsto-with-subs",
+  "manifest_version": 2,
+  "minimum_chrome_version": "22",
+  "name": "FS.TO With Subs",
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "0.1.0",
+  "web_accessible_resources": [
+    "scripts/inject.js",
+    "libs/jquery-2.1.1.min.js",
+    "/css/inject.css"
+  ],
+  "permissions": [
+    "tabs",
+    "http://api.opensubtitles.org/",
+    "activeTab",
+    "cookies"
+  ],
+  "externally_connectable": {
+    "matches": ["http://fs.to/*"]
+  }
 }
