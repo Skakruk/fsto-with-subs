@@ -8,9 +8,6 @@
         "libs/srt-parser.js",
         "scripts/contentscript.js"
       ],
-      "css": [
-        "css/inject.css"
-      ],
       "matches": [
         "http://fs.to/*/view_iframe/*",
         "http://fs.to/*/view/*"
@@ -27,8 +24,7 @@
   "version": "0.1.0",
   "web_accessible_resources": [
     "scripts/inject.js",
-    "libs/jquery-2.1.1.min.js",
-    "/css/inject.css"
+    "css/inject.css"
   ],
   "permissions": [
     "tabs",

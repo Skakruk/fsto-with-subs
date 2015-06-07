@@ -335,16 +335,6 @@ var videoPlayer = new subsVideoPlayer();
     videoPlayer.injectScript(name);
 });
 
-$(".b-iframe-aplayer iframe").on("load", function () {
-    var s = document.createElement('script');
-    s.src = chrome.extension.getURL('libs/jquery-2.1.1.min.js');
-    s.onload = function () {
-        this.parentNode.removeChild(this);
-    };
-    $(".b-iframe-aplayer iframe").contents().find("head").append(s);
-});
-
-
 window.addEventListener("message", function (event) {
     if (event.source != window)
         return;
